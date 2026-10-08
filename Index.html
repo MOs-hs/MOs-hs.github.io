@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamad Hajj Sleiman — Software & Mobile Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F5F9;--ink:#14213D;--muted:#5B6478;--line:#D5DBE6;--accent:#2B59FF;--soft:#E3EAFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1626;--ink:#E8ECF5;--muted:#9AA5BD;--line:#26314A;--accent:#8CA8FF;--soft:#1C2742}}
+:root[data-theme="dark"]{--bg:#0F1626;--ink:#E8ECF5;--muted:#9AA5BD;--line:#26314A;--accent:#8CA8FF;--soft:#1C2742}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;margin:0;line-height:1.08}
+header{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(2.6rem,9vw,5.6rem);font-weight:800;letter-spacing:-.03em;max-width:12ch}
+.role{font-size:1.25rem;margin:20px 0 0;color:var(--muted);max-width:34em}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.links a{padding:10px 18px;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:500}
+.links a.primary{background:var(--ink);color:var(--bg)}
+.links a:hover{border-color:var(--accent)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:1.9rem;font-weight:700;margin-bottom:28px}
+.about{max-width:38em;margin:0}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 15rem;gap:8px 40px;padding:24px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row h3{font-size:1.3rem;font-weight:700}
+.row p{margin:8px 0 10px;color:var(--muted);max-width:36em}
+.row .meta{font-size:.95rem}
+.stack{display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;margin:0;padding:0;list-style:none}
+.stack li{background:var(--soft);color:var(--ink);padding:3px 11px;border-radius:6px;font-size:.88rem;font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 40px;margin:0}
+.skills dt{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:1.05rem;margin-bottom:4px}
+.skills dd{margin:0;color:var(--muted)}
+.edu h3{font-size:1.3rem}
+.edu p{margin:6px 0 0;color:var(--muted);max-width:40em}
+.edu .item+.item{margin-top:24px}
+footer{padding:56px 0 64px}
+footer h2{margin-bottom:12px}
+footer p{margin:0 0 6px}
+@media (max-width:640px){.row{grid-template-columns:1fr}header{padding:48px 0 40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Mohamad Hajj Sleiman</h1>
+    <p class="role">Computer Science graduate building full-stack web apps and cross-platform mobile apps. Based in Bednayel, Lebanon.</p>
+    <nav class="links" aria-label="Contact links">
+      <a class="primary" href="mailto:hajjsleimanmohamad4@gmail.com">Email me</a>
+      <a href="https://github.com/MOs-hs">GitHub</a>
+      <a href="https://www.linkedin.com/in/mohamad-hajjsleiman-400342329">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="about">I studied Computer Science at the Lebanese International University and work across the stack: databases and APIs, React front ends, and Flutter mobile apps. I also hold Cisco networking credentials, work comfortably in Linux, and use AI-assisted tools to speed up development and debugging. I'm looking for a Software Engineer or Developer role where I can keep growing in a production team.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <article class="row">
+      <div>
+        <h3>KHADAMATI</h3>
+        <p>A full-stack service management platform. Users request, track, and manage home services through a web interface backed by a secure API and database.</p>
+        <span class="meta"><a href="https://github.com/MOs-hs/KHADAMATI.web">View on GitHub</a></span>
+      </div>
+      <ul class="stack" aria-label="Technologies"><li>React</li><li>Node.js</li><li>MySQL</li></ul>
+    </article>
+
+    <article class="row">
+      <div>
+        <h3>Meal planner, web and mobile</h3>
+        <p>A meal planning project built twice: as a JavaScript web app and as a Flutter mobile app.</p>
+        <span class="meta"><a href="https://github.com/MOs-hs/webfinal-project">Web version</a> &nbsp;|&nbsp; <a href="https://github.com/MOs-hs/mobile-final-project-">Mobile version</a></span>
+      </div>
+      <ul class="stack" aria-label="Technologies"><li>JavaScript</li><li>Flutter</li><li>Dart</li></ul>
+    </article>
+
+    <article class="row">
+      <div>
+        <h3>Time Tracker</h3>
+        <p>A Flutter app that tracks how long you spend on different activities, using Dart's built-in Stopwatch and Timer classes with no extra packages.</p>
+        <span class="meta"><a href="https://github.com/MOs-hs/Time-Tracker-app">View on GitHub</a></span>
+      </div>
+      <ul class="stack" aria-label="Technologies"><li>Flutter</li><li>Dart</li></ul>
+    </article>
+
+    <article class="row">
+      <div>
+        <h3>Marketplace app</h3>
+        <p>A Flutter marketplace app whose home screen shows a different dashboard depending on the user's role.</p>
+      </div>
+      <ul class="stack" aria-label="Technologies"><li>Flutter</li><li>Dart</li></ul>
+    </article>
+
+    <article class="row">
+      <div>
+        <h3>Hate speech detection</h3>
+        <p>A machine learning and NLP project that detects hate speech and offensive language, built and trained in Google Colab.</p>
+      </div>
+      <ul class="stack" aria-label="Technologies"><li>Python</li><li>NLP</li><li>Google Colab</li></ul>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Web</dt><dd>React, Node.js, Express.js, MongoDB (MERN), HTML, CSS, JavaScript</dd></div>
+      <div><dt>Mobile</dt><dd>Flutter and Dart</dd></div>
+      <div><dt>Databases</dt><dd>MySQL, MongoDB, schema and ER design, SQL scripting</dd></div>
+      <div><dt>Core CS</dt><dd>Java, object-oriented programming, data structures, algorithms</dd></div>
+      <div><dt>Systems and networking</dt><dd>Linux, Bash, VMware labs, Cisco Network Security, CCNA 1 and 2 coursework</dd></div>
+      <div><dt>Tools</dt><dd>Git and GitHub, VS Code, Antigravity, Microsoft Office, Photoshop and Illustrator (basic)</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="edu">
+  <div class="wrap">
+    <h2>Education and credentials</h2>
+    <div class="item">
+      <h3>B.S. in Computer Science, Lebanese International University</h3>
+      <p>Coursework: data structures and algorithms, object-oriented programming, database systems, computer networks, operating systems, software engineering.</p>
+    </div>
+    <div class="item">
+      <h3>Cisco Networking Academy</h3>
+      <p>Network Security verified badge. Completed CCNA 1 (Introduction to Networks) and CCNA 2 (Switching, Routing, and Wireless Essentials).</p>
+    </div>
+    <div class="item">
+      <h3>Languages</h3>
+      <p>Arabic (native), English (fluent), French (fluent).</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p><a href="mailto:hajjsleimanmohamad4@gmail.com">hajjsleimanmohamad4@gmail.com</a></p>
+    <p><a href="tel:+96181874830">+961 81 874830</a></p>
+    <p><a href="https://github.com/MOs-hs">github.com/MOs-hs</a></p>
+    <p><a href="https://www.linkedin.com/in/mohamad-hajjsleiman-400342329">LinkedIn profile</a></p>
+  </div>
+</footer>
+</body>
+</html>
